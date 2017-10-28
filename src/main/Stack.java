@@ -22,8 +22,14 @@ public class Stack {
 	
 	public int pop() {
 		
-		int topValue = elements.get(elements.size());
-		elements.remove(topValue);
+		int topValue = -1;
+		if (!elements.isEmpty()) {
+			topValue = elements.get(elements.size()-1);
+			elements.remove(elements.size()-1);
+		}
+		else {
+			System.out.println("The stack is empty, unable to pop()");
+		}
 		return topValue;
 		
 	}
