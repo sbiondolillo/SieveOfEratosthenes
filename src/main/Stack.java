@@ -14,12 +14,19 @@ public class Stack {
 	
 	private ArrayList<Integer> elements = new ArrayList<Integer>();
 	
+	/*
+	 * Add a value to the top of the stack
+	 * @param value - any valid integer
+	 */
 	public void push(int value) {
 		
 		elements.add(value);
 	
 	}
 	
+	/*
+	 * Remove and display the top element of the stack
+	 */
 	public int pop() {
 		
 		int topValue = -1;
@@ -34,18 +41,28 @@ public class Stack {
 		
 	}
 	
+	/*
+	 * Display the top element of the stack
+	 */
 	public int peek() {
 		
 		return elements.get(elements.size());
 		
 	}
 	
+	/*
+	 * Identify whether the stack is empty
+	 */
 	public boolean isEmpty() {
 		
 		return elements.size() == 0;
 		
 	}
 	
+	/*
+	 * Provide a readable format for printing a stack
+	 * the top element is at the extreme right of the printed list
+	 */
 	@Override
 	public String toString() {
 		
