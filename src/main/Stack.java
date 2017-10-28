@@ -46,7 +46,7 @@ public class Stack {
 	 */
 	public int peek() {
 		
-		return elements.get(elements.size());
+		return elements.get(elements.size()-1);
 		
 	}
 	
