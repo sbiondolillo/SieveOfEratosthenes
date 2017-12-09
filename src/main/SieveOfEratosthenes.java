@@ -37,6 +37,14 @@ public class SieveOfEratosthenes {
 		
 		while (!theStack.isEmpty()) {
 			System.out.println(theStack.pop());
+			try        
+			{
+			    Thread.sleep(100);
+			} 
+			catch(InterruptedException ex) 
+			{
+			    Thread.currentThread().interrupt();
+			}
 		}
 		
 	}
@@ -48,7 +56,8 @@ public class SieveOfEratosthenes {
 	 */
 	public static void main(String[] args) {
 		
-		System.out.println("Here is a stack of every prime integer from 2 to 1000 printed from top to bottom");
+		System.out.println("Here is a stack of every prime integer from 2 to 1000 printed from top to bottom:");
+		System.out.println();
 		buildTheStack();
 		printTheStack();
 		
